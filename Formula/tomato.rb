@@ -5,21 +5,21 @@
 class Tomato < Formula
   desc "Behavioral testing toolkit with built-in container orchestration"
   homepage "https://tomatool.github.io/tomato"
-  version "2.0.2"
+  version "2.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tomatool/tomato/releases/download/v2.0.2/tomato_2.0.2_darwin_amd64.tar.gz"
-      sha256 "508bb82fc20e91fdae5cd5743b93abce14cfadb1ca63012dc2aa02e806d77310"
+      url "https://github.com/tomatool/tomato/releases/download/v2.0.3/tomato_2.0.3_darwin_amd64.tar.gz"
+      sha256 "989f58ba09276351d3d99ce1a9619fddb7213e765d69c716fd7d59785cb95b24"
 
       def install
         bin.install "tomato"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tomatool/tomato/releases/download/v2.0.2/tomato_2.0.2_darwin_arm64.tar.gz"
-      sha256 "4cf9df602b10831645cbb3e0cbde2140b1d0f01b846ec30ed46099aaca4d3493"
+      url "https://github.com/tomatool/tomato/releases/download/v2.0.3/tomato_2.0.3_darwin_arm64.tar.gz"
+      sha256 "965987e4791aa05ab6f324ce1d7613d1cc33c10e22d1bd50f62c6fb112dee420"
 
       def install
         bin.install "tomato"
@@ -29,15 +29,15 @@ class Tomato < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomatool/tomato/releases/download/v2.0.2/tomato_2.0.2_linux_amd64.tar.gz"
-      sha256 "d9ed3646c1f565bb14a52016d97b914d226e87550a067ad77c513f336ef8e878"
+      url "https://github.com/tomatool/tomato/releases/download/v2.0.3/tomato_2.0.3_linux_amd64.tar.gz"
+      sha256 "589146a903a0f42f29095d33bbd65ee2f2c1cf31b815bcc76d48d754f85e39ef"
       def install
         bin.install "tomato"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomatool/tomato/releases/download/v2.0.2/tomato_2.0.2_linux_arm64.tar.gz"
-      sha256 "0c298bbb62ba9342f13783ab2d70550236a59a93ec3df0db7b168cc07146e301"
+      url "https://github.com/tomatool/tomato/releases/download/v2.0.3/tomato_2.0.3_linux_arm64.tar.gz"
+      sha256 "d7f65f79572e55372c6f001ad9e8267f430db33a748704572c3bf7fc8aedbfbf"
       def install
         bin.install "tomato"
       end
