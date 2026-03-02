@@ -3,7 +3,7 @@ cask "tomato" do
   name "tomato"
   desc "Behavioral testing toolkit with built-in container orchestration"
   homepage "https://tomatool.github.io/tomato"
-  version "2.0.7"
+  version "2.0.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "tomato" do
   on_macos do
     on_intel do
       url "https://github.com/tomatool/tomato/releases/download/v#{version}/tomato_#{version}_darwin_amd64.tar.gz"
-      sha256 "f1759d4b8620d5bbf24513d7a7a97b2c43edef82b070c97883845ef0ca692544"
+      sha256 "aac40e2de2c88838518eaf0bcd30a2ad39f30ba566f8c9c16c616118fa0e674d"
     end
     on_arm do
       url "https://github.com/tomatool/tomato/releases/download/v#{version}/tomato_#{version}_darwin_arm64.tar.gz"
-      sha256 "9d9464f77220410b529ca84b3688a0dc1e6847e84ef04b9faa4eac1ad9377da1"
+      sha256 "3aa9879b15d7057ea0e08fd6ea3c920dbd6b195bf81dc4e5ae03ac285dbc79cc"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/tomatool/tomato/releases/download/v#{version}/tomato_#{version}_linux_amd64.tar.gz"
-      sha256 "9911e2fd6a478a1af80e1506951f2759326e383a2c7ebdede9ab2529417c5dfb"
+      sha256 "f5ef72ecde67917ba044e12ed28867788fa422a6e8134311ed37e42ccc97e480"
     end
     on_arm do
       url "https://github.com/tomatool/tomato/releases/download/v#{version}/tomato_#{version}_linux_arm64.tar.gz"
-      sha256 "2f330deeae7d196820b4c1302785cccb74b5238f73d1b9c1aef282729d6ef70d"
+      sha256 "498a8a517a45792c948b09410ee67f64d02b13551ce9810225be07695a83ab27"
     end
   end
 
